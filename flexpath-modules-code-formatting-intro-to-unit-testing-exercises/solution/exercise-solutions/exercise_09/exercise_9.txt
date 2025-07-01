@@ -1,0 +1,30 @@
+
+Exercise 9: Using package.json Scripts
+
+Description: 
+
+Add a script to your package.json that runs the index.js file at the 
+root of this project directory using node. 
+
+Name the script 'start'. 
+
+Demonstrate how to run this script using npm.
+
+
+Answer:
+
+In package.json, add the following under "scripts":
+
+```
+"scripts": {
+  "start": "node index.js"
+}
+
+```
+
+Run the script:
+
+```
+npm run start
+
+```

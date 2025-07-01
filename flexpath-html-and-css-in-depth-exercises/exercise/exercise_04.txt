@@ -1,0 +1,10 @@
+
+Exercise 4: Inserting an Image
+
+Description: 
+
+Insert an image into your HTML document below the unordered list. 
+Use the <img> tag with the src attribute pointing to 
+an image URL of your choice. 
+
+Include an alt attribute describing the image.

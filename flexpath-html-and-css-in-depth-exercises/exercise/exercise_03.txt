@@ -1,0 +1,7 @@
+
+Exercise 3: Creating an Unordered List
+
+Description:
+
+Under the paragraph from Exercise 2, 
+create an unordered list (<ul>) of your three favorite hobbies.

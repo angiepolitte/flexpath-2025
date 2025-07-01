@@ -1,0 +1,7 @@
+
+Exercise 9: Styling Text with CSS
+
+Description: 
+
+Using an internal CSS style in the <head> of your document, 
+change the color of all <h1> elements to blue and set the font family to Arial.

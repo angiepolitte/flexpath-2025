@@ -1,0 +1,16 @@
+
+Exercise 6: 
+
+Installing a Third-Party Package
+
+Description: 
+
+Inside of your terminal, navigate back out to the root directory of this
+module. You should be at the same directory level as the files 
+package.json and .gitgnore
+
+Use npm to install the library `chalk`
+https://www.npmjs.com/package/chalk
+
+Then, write a simple .js file that uses chalk to log a blue colored message 
+to your terminal when it is run.

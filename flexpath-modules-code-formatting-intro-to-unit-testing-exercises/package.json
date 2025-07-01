@@ -1,0 +1,23 @@
+{
+  "name": "flextech-modules-code-formatting-intro-to-unit-testing-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaunchCodeEducation/flextech-modules-code-formatting-intro-to-unit-testing-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaunchCodeEducation/flextech-modules-code-formatting-intro-to-unit-testing-exercises.git/issues"
+  },
+  "homepage": "https://github.com/LaunchCodeEducation/flextech-modules-code-formatting-intro-to-unit-testing-exercises.git#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

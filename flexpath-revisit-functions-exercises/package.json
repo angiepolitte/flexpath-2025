@@ -1,0 +1,23 @@
+{
+  "name": "flextech-revisit-functions-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaunchCodeEducation/flextech-revisit-functions-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaunchCodeEducation/flextech-revisit-functions-exercises.git/issues"
+  },
+  "homepage": "https://github.com/LaunchCodeEducation/flextech-revisit-functions-exercises.git#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

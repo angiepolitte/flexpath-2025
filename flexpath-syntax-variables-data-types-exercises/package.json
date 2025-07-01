@@ -1,0 +1,23 @@
+{
+  "name": "flextech-syntax-variables-data-types-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaunchCodeEducation/flextech-syntax-variables-data-types-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaunchCodeEducation/flextech-syntax-variables-data-types-exercises.git/issues"
+  },
+  "homepage": "https://github.com/LaunchCodeEducation/flextech-syntax-variables-data-types-exercises.git#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

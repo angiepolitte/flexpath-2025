@@ -1,0 +1,480 @@
+
+Exercise 1: Managing State with useState
+
+
+Description: 
+
+Create a simple `Counter` component that increments and decrements a 
+number using the 'useState' hook.
+
+Then, import and display this component in App.jsx.
+
+
+
+Exercise 2: Handling Derived State
+
+
+Description: 
+
+Create a component `SquareCalculator` that calculates and displays the 
+square of a 'number' stored in state. 
+
+Add a number input field to this component, and have it be able to change this
+'number' state variable.
+Display the number and its square inside <h2> tags in the component.
+
+Then, import and display this component in App.jsx.
+
+
+
+Exercise 3: Using useEffect for Side Effects
+
+
+Description: 
+
+Create a component `DataFetcher` that fetches a post record from a 
+mock API when it mounts.
+
+Use this string for the url:
+
+`https://jsonplaceholder.typicode.com/posts/5`
+
+Or use this template literal string for the url if you want different posts 
+to be pulled back each time the component mounts:
+
+ `https://jsonplaceholder.typicode.com/posts/${Math.ceil(
+        Math.random() * 100
+  )}`
+
+Display the retrieved post records 'title' and 'body' properties inside of the 
+return of the `DataFetcher` component, using an <h2> tag for the 'title' 
+value and a <p> tag for the 'body' value.
+
+Then, import and display this component in App.jsx.
+
+
+
+Exercise 4: Implementing an Error Boundary
+
+
+Description: 
+
+Create an error boundary component to catch errors in child components.
+
+Then, inside of App.jsx, wrap the `DataFetcher` component from exercise 3 in 
+this new Error Boundary component.
+
+Then, from within `DataFetcher` right before the display `return`, 
+throw a new error with the message "Data Fetcher failed!"
+
+The wrapping error boundary component should catch this error and display
+an error message in the App.
+
+
+
+Exercise 5: Setting Up Routing with React Router
+
+
+Description: 
+
+Install the npm package `react-router-dom` inside of the `my-react-app` directory 
+and set up basic routing in the app by modifying main.jsx. 
+
+npm command to install react-router-dom:
+
+```
+npm install react-router-dom
+
+```
+
+code for `main.jsx`:
+
+```
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.js";
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
+
+```
+
+
+
+Exercise 6: Declaring Routes and Using Link for Navigation
+
+
+Description: 
+
+Create two simple components (`About` and `Home`) and place them 
+inside the `src/pages` directory.
+
+Inside of App.jsx, setup a <nav> element that contains react-router-dom <Link> 
+elements to each Component. 
+
+Add a <hr/> element after the closing tag of then <nav> element.  
+
+Then, inside of a <Routes> component tag (from react-router-dom), 
+create a <Route> for the `About` and `Home` component. 
+
+- Set the 'path' value of the Home Route to "/". Match the 
+  Home <Link> 'to' propery to this path. 
+- Set the 'path' value of the About Route to "/about". 
+  Match the About <Link> 'to' property to this path.
+
+You should now be able to navigate between the two components in your app by 
+clicking on the displayed <Link> components.
+
+
+
+Exercise 7: Using URL Parameters with useParams
+
+
+Description: 
+
+Create a new component 'UserProfile' inside of `src/pages`. 
+Use the `useParams` method from react-router-dom to grab a property 
+named 'userId' from the application's web url. 
+
+Have the `UserProfile` component return a <h2> message that says:
+
+"User Profile for User ID: [userId]"
+
+Then, add a <Link> element linking to the address "/user/1" to the <nav> in 
+App.jsx.
+
+Then add a <Route> element with the path "/user/:userId" and 
+have the Route display the `UserProfile` component.
+
+Now, when you click on the new <Link> element, you should see the 
+message "User Profile for User ID: 1" displayed on the page.
+
+Edit the url in your web browser to end with `/users/5` and hit enter. 
+
+You should see the message "User Profile for User ID: 5" now displayed on 
+the page.
+
+
+
+Exercise 8: Handling 404 Pages
+
+
+Description: 
+
+Create a component to display a "Not Found" (404) error message and add 
+it to `src/pages`.
+
+Then, in App.jsx, add a new catch all <Route> as the last <Route> within the 
+<Routes> component.
+
+Set it's path to "*" and have it display the "Not Found" component you created.
+
+Edit the url in your web browser to end with `/other` and hit enter.
+
+You should now see your "Not Found" component display, 
+since there is no <Route> in App.jsx that has a path set to "/other".
+
+
+
+Exercise 9: Programmatic Navigation with useNavigate
+
+
+Description: 
+
+Create a component `NavigationButton` and add it to `src/components`.
+
+Have it render a button that when clicked navigates the user to the  
+"/about" path in the app.
+
+Use the react-router-dom method `useNavigate` to do this. 
+
+Use the useNavigate hook to navigate programmatically after the button click.
+
+Then, pull this new component into your `Home` component in `src/pages` and 
+have it display as the last item within the existing JSX content.
+
+Now when you go to the Home component in your app, and click on the button, 
+it should instantly navigate you to your `About` component.
+
+
+
+Exercise 10: Handling Form Submissions
+
+
+Description: 
+
+Create a new component `SimpleForm` and add it to `src/components`. 
+Have the component manage two values in state: 'inputValue' and 'submittedValue'.
+
+Create a simple form that contains a single "text" input that updates the 
+'inputValue' state variable. Also, add a submit button for the form.
+
+Define an onSubmit event for the form that will prevent the default behavior of 
+the submission event, set the state variable 'submittedValue', and set the 
+'inputValue' state variable to a blank string.
+
+Then, edit the JSX of the component to display the value of the 
+'submittedValue' variable below the form inside of a <p> tag, 
+with the message "You submitted: [submittedValue]".
+
+In your App.jsx file, add a new <Link> and <Route> component to point to 
+and display this `SimpleForm` component.
+
+
+
+Exercise 11: Using React's Synthetic Event System
+
+
+Description: 
+
+Explain how React's synthetic events work. 
+
+Create a component `EventLogger` and add it to `src/components`.
+The component should just render a <button>, that when clicked will log the 
+'type' and 'target' of the event to the console.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `EventLogger` component.
+
+
+
+Exercise 12: Fetching Data with Async/Await
+
+
+Description: 
+
+Create a component `AsyncDataFetcher` and add it to `src/components`.
+Inside of it, write an async/await version of the `DataFetcher` 
+component from exercise 3.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `AsyncDataFetcher` component.
+
+
+
+Exercise 13: Handling Loading States and Errors
+
+
+Description: 
+
+Create a new component `EnhancedDataFetcher` and add it to `src/components`.
+
+Enhance the previous exercises `AsyncDataFetcher` component to display:
+
+- Text saying "Loading..." when the fetch call is waiting for a return
+- Text saying "Error: [error.message]" when the fetch call runs into an error
+- Nothing if no data is found with the fetch request.
+
+Use state in your component to store and update variables to get this 
+dynamic visual behavior in the component.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `EnhancedDataFetcher` component.
+
+
+
+Exercise 14: Optimizing with useCallback
+
+
+Description: 
+
+Create a file `CallbackDemo.jsx` and add it to `src/components`. 
+Have it display a memoized `Button` component defined within the 
+CallbackDemo.jsx file.
+
+The button should have a click event and a label passed to it through props.
+
+Then define a component named `MemoizedButton` that just stores 
+`React.memo(Button)`.
+
+Then define a component in this file named `CallbackDemo`. 
+Create two methods:
+    - increment
+    - decrement
+
+and a state variable named 'count'. 
+
+When the 'increment' method is run, have count incremented by 1
+When the 'decrement' method is run, have count decremented by 1
+
+Then, wrap the 'increment' and 'decrement' functions in the `useCallback` 
+react method.
+
+In the CallbackDemo return, display the current 'count' value and 
+two MemoizedButton components: 
+
+- One that will handle the 'increment' method and be labeled 'increment'. 
+- One will handle the 'decrement' method and be labeled 'decrement'.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `CallbackDemo` component.
+
+See how the CallbackDemo component can efficiently render the updated count 
+after either button press due to the MemoizedButton and `useCallback` method.
+
+
+
+Exercise 15: Optimizing with useMemo
+
+
+Description: 
+
+Use useMemo to memoize the expensive calculation below
+```
+const expensiveCalculation = (num) => {
+    console.log('Calculating...');
+    // Simulate heavy computation
+    for (let i = 0; i < 1000000000; i++) {}
+    return num * 2;
+  };
+```
+
+Create a component `MemoizationDemo` in `src/components`. 
+It should have two state variables: 'number' and 'toggle'.
+
+It should have the `expensiveCalculation` above defined on it.
+You should then create a function expression named `calculatedValue` that 
+stores the result of calling `expensiveCalculation(number)`, properly wrapped 
+in the `useMemo` React method.
+
+In the return, render:
+- an <h2> tag displaying the 'calculatedValue' value.
+- an <input> of "number" type that will update the 'number' state variable 
+  when it is changed. 
+- a button that when clicked simply toggles the 'toggle' variable between 
+  true and false and displays its current value. This toggle button will 
+  exist to show that by wrapping the `expensiveCalculation` that runs every 
+  render with `useMemo`, we still have the performance to update and display 
+  the new 'toggle' state every time we click the button.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `MemoizationDemo` component.
+
+
+
+Exercise 16: Creating a Data Fetching Custom Hook
+
+
+Description: 
+
+Create a custom hook useFetch to centralize data-fetching logic.
+It should take a 'url' as a prop, and manage a GET request to this url.
+It should contain state to track the returned 'data', the 'loading' status, 
+and if an 'error' is encounter. IWhen the call is finished, it should return 
+these three variables, wrapped in an object literal.
+
+Then, create a component `CustomHookDemo`in `src/components`. 
+
+This component should call the custom hook by passing it 
+the url "https://jsonplaceholder.typicode.com/posts/3".
+
+It should display the current loading status, an error if one is encountered, 
+and finally the data if it is returned. Otherwise, display nothing.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to 
+and display this `CustomHookDemo` component.
+
+ 
+
+Exercise 17: Centralizing Data Fetching with Custom Hooks
+
+
+Description: 
+
+Explain the benefits of using custom hooks like useFetch for data fetching.
+
+
+
+Exercise 18: Using useReducer for State Management
+
+
+Description: 
+
+Implement a counter using the useReducer hook.
+
+Create a component `ReducerCounter` and add it to `src/components`.
+It should have a variable 'initialState' defined as `const` and 
+initialized to 0.
+
+It should contain a reducer that takes the inputs 'state' and 'action'.
+Inside of this reducer, there should be a switch statement that operates on the 'action' value.
+- If action equals "increment", return `state + 1`.
+- If action equals "decrement", return `state - 1`
+- If action equals "reset", return the 'initialState' variable defined 
+  outside of the reducer.
+- Set the default to return `state`.
+
+Then, use the `useReducer` function by passing it your `reducer` and 
+the initial state.
+
+Store the return of `useReducer` to the variables 'count' and 'dispatch'.
+
+Then in the display return of the component, have it render:
+- an <h2> element that displays the current 'count'
+- a button that when clicked, fires the `dispatch` method with the 
+  argument "Increment". Label this button as "Increment"
+- a button that when clicked, fires the `dispatch` method with the 
+  argument "Decrement". Label this button as "Decrement"
+- a button that when clicked, fires the `dispatch` method with the 
+  argument "Reset". Label this button as "Reset"
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `ReducerCounter` component.
+
+
+
+Exercise 19: Debouncing Input with useEffect
+
+
+Description: 
+
+Implement an input field that "debounces" the user input before 
+making an API call.
+
+"Debounce" means that it delays the call until the user stops typing,
+usually for 500-1000ms. Then it fires the request off.
+
+Simulate an api call by using the `setTimeout` method set to fire after 1000ms.
+
+Create this input inside of a component named `DebouncedInput` and 
+stored in `src/components.`
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `DebouncedInput` component.
+
+
+
+Exercise 20: Throttling Scroll Events
+
+
+Description: 
+
+Implement a component `ThrottledScrollLogger` that logs the user's scroll 
+position to the console, throttled to fire once every 500ms.
+
+Create this component in the `src/components` directory.
+
+In your App.jsx file, add a new <Link> and <Route> component to point to and 
+display this `ThrottledScrollLogger` component.
+
+
+
+Exercise 21: Using React.Fragment and Short Syntax
+
+
+Description: 
+
+Explain and demonstrate the use of React.Fragment and its shorthand syntax.
+
+Create a simple example component using React.Fragment.
+
+Then in your App.jsx file, add a new <Link> and <Route> component to point to 
+and display this component.

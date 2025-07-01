@@ -1,0 +1,6 @@
+
+Exercise 8: Updating Dependencies
+
+Description: Write out the npm commands for how to check for outdated packages
+and then either update them all or specifically update them 
+to the latest major versions

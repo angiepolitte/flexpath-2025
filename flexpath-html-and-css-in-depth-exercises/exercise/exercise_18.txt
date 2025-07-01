@@ -1,0 +1,10 @@
+
+Exercise 18: Creating a Grid Layout with CSS Grid
+
+Description: 
+
+Design a simple photo gallery using CSS Grid. 
+
+Display six images in a grid layout with three columns on large screens and 
+one column on small screens.
+

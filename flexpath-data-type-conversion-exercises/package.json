@@ -1,0 +1,23 @@
+{
+  "name": "flextech-data-type-conversion-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaunchCodeEducation/flextech-data-type-conversion-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaunchCodeEducation/flextech-data-type-conversion-exercises.git/issues"
+  },
+  "homepage": "https://github.com/LaunchCodeEducation/flextech-data-type-conversion-exercises.git#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

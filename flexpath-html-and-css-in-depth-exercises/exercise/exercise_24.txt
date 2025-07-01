@@ -1,0 +1,9 @@
+
+Exercise 24: Creating a Responsive Navigation Bar
+
+Description: 
+
+Build a responsive navigation bar that collapses 
+into a hamburger menu on small screens. 
+
+Use HTML, CSS, and basic JavaScript if necessary.

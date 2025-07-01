@@ -1,0 +1,8 @@
+
+Exercise 12: Background Colors and Images
+
+Description: 
+
+Set a background color of light gray to the <body> of your document. 
+
+Then, set a background image for the header section using CSS.

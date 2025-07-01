@@ -1,0 +1,7 @@
+
+Exercise 14: Using Attribute Selectors
+
+Description: 
+
+Use a CSS attribute selector to style all input elements of 
+type 'text' by setting their border color to blue.

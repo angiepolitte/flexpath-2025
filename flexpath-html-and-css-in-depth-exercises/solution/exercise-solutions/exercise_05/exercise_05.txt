@@ -1,0 +1,9 @@
+
+Exercise 5: Using Semantic HTML Elements
+
+Description: 
+
+Modify your HTML document to use semantic elements. 
+
+Wrap your header content (<h1>) inside a <header> tag, your main content 
+inside a <main> tag, and your list of hobbies inside a <section> with a heading.

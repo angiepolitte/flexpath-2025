@@ -1,0 +1,22 @@
+
+Exercise 15: CSS Combinators
+
+Description: 
+
+Replace the `<a href="about.html">Learn more about me</a>` html in your file
+with a <nav> element. 
+
+Inside of this <nav> element, create an unordered list of 3 separate list 
+items. 
+
+Inside of each list item, put an <a> tag that links out to the following html
+pages:
+- index.html 
+- about.html
+- contact.html
+
+Then make the index.html link display as "Home", the about.html link as "About,
+and the contact.html link as "Contact Me"
+
+Then, use a descendant selector to style all <li> elements inside the 
+<nav> element by setting their display to inline and adding some padding.

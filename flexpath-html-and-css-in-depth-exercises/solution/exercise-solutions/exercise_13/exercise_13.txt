@@ -1,0 +1,12 @@
+
+Exercise 13: Using Class and ID Selectors
+
+Description: 
+
+Assign a class 'highlight' to your hobbies list items. 
+
+Use CSS to set the text color to green for elements with the 'highlight' class. 
+
+Also, assign an ID 'main-title' to your main heading and set 
+its font size to 36px using the ID selector.
+

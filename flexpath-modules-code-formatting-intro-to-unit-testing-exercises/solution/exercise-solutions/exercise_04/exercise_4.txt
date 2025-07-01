@@ -1,0 +1,27 @@
+
+Exercise 4: Mixing ES Modules and CommonJS
+
+Description: 
+
+Explain why mixing ES Modules and CommonJS modules can lead to issues. 
+
+Provide an example where importing a CommonJS module using 
+ES Module syntax causes problems.
+
+
+Answer:
+
+Mixing ES Modules and CommonJS can lead to interoperability issues 
+because they have different module resolution mechanisms. 
+
+For example, trying to import a CommonJS module using ES Module 
+import syntax may not provide the expected exports.
+
+Look at the error that results from running `incorrectApp.js` in 
+this directory.
+
+
+To correctly import a CommonJS module in an ES Module, 
+you may need to import the default export, as seen in the file `correctApp.js`
+in this directory
+

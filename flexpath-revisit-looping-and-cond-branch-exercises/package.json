@@ -1,0 +1,23 @@
+{
+  "name": "flextech-revisit-looping-and-cond-branch-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaunchCodeEducation/flextech-revisit-looping-and-cond-branch-exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LaunchCodeEducation/flextech-revisit-looping-and-cond-branch-exercises.git/issues"
+  },
+  "homepage": "https://github.com/LaunchCodeEducation/flextech-revisit-looping-and-cond-branch-exercises.git#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

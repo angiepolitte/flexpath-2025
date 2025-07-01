@@ -1,0 +1,7 @@
+
+Exercise 21: Using Pseudo-classes
+
+Description: 
+
+Style all visited links on your page to have a 
+purple color using the ':visited' pseudo-class.

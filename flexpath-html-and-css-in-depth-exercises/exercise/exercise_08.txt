@@ -1,0 +1,8 @@
+
+Exercise 8: Adding Meta Tags
+
+Description: 
+
+In the <head> section of your HTML document, add meta tags for 
+character encoding (UTF-8) and viewport settings for responsive design.
+

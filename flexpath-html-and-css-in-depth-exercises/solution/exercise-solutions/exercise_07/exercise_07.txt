@@ -1,0 +1,9 @@
+
+Exercise 7: Linking Between Pages
+
+Description: 
+
+Add an anchor tag (<a>) to your document that links to another 
+page called `about.html`. 
+
+The link text should be "Learn more about me".

@@ -1,0 +1,10 @@
+
+Exercise 4: Mixing ES Modules and CommonJS
+
+Description: 
+
+Explain why mixing ES Modules and CommonJS modules can lead to issues. 
+
+Provide an example where importing a CommonJS module using 
+ES Module syntax causes problems.
+

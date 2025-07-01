@@ -1,0 +1,16 @@
+
+Exercise 7: Managing Package Versions
+
+Description: 
+
+Explain the difference between installing a package 
+with ^1.0.0, ~1.0.0, and 1.0.0 in the package.json dependencies. 
+
+What do these version specifiers mean?
+
+
+Answer:
+
+^1.0.0: Allows all minor and patch updates. It matches versions >=1.0.0 <2.0.0.
+~1.0.0: Allows only patch updates. It matches versions >=1.0.0 <1.1.0.
+1.0.0: Locks the dependency to exactly version 1.0.0.

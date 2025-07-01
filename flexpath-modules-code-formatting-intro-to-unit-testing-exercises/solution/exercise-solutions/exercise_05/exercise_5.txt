@@ -1,0 +1,10 @@
+
+Exercise 5: Organizing Code into Separate Files
+
+Description: Given a simple application (`app.js`) that calculates 
+areas of shapes, separate the code into 3 separate modules: 
+
+circle.js, rectangle.js, and main.js. 
+
+Export the area calculation functions from each shape module and import 
+them in main.js.

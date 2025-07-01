@@ -1,0 +1,10 @@
+
+Exercise 10: Applying External CSS
+
+Description: 
+
+Create an external CSS file named `styles.css`. 
+
+Link it to your HTML document using the <link> tag. 
+
+Move the styles from the internal <style> tag to the external CSS file.

@@ -1,0 +1,8 @@
+
+Exercise 19: Positioning Elements with CSS
+
+Description: 
+
+Use CSS positioning to create a footer that sticks to the 
+bottom of the viewport. Ensure that it stays at the 
+bottom even if the content is short.

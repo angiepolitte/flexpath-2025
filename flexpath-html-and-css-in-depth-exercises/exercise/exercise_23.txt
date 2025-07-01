@@ -1,0 +1,11 @@
+
+Exercise 23: The Cascade in CSS
+
+Description: 
+
+Write CSS rules that set all paragraphs to have blue text, 
+but paragraphs inside a <section> with the class 'highlight' should have green text.
+
+
+Ensure that the cascade and specificity result in the correct styling.
+

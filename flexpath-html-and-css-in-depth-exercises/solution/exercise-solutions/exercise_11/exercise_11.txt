@@ -1,0 +1,8 @@
+
+Exercise 11: Understanding the CSS Box Model
+
+Description: 
+
+Add a <div> around your main content. 
+
+Use CSS to add a border, padding, and margin to the <div> to visualize the box model.

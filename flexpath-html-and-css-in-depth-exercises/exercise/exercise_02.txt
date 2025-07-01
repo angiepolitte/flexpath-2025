@@ -1,0 +1,6 @@
+
+Exercise 2: Creating Paragraphs and Headings
+
+Description: Add to your HTML document from Exercise 1 by 
+including a heading level 2 (<h2>) with the text "About Me" 
+and a paragraph (<p>) below it with some placeholder text about yourself.

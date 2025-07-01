@@ -1,0 +1,23 @@
+
+Exercise 3: Understanding CommonJS Modules
+
+Description: 
+
+Create a module named stringUtils.cjs using CommonJS syntax 
+that exports two functions: toUpperCase(str) and toLowerCase(str).
+
+Then, import these functions in app.cjs using 
+`require` and demonstrate their usage.
+
+
+WARNING 
+
+Notice that the file names above ends with .cjs instead of .js.
+
+This current Github repo is configured, through the package.json file,
+to use ES Module syntax as a default for all files.
+
+To be able to use CommonJS syntax in a file, we just need to make the file 
+extension .cjs instead of .js
+
+

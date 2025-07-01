@@ -1,0 +1,14 @@
+
+Exercise 1: Creating an ES Module
+
+Description: Create a JavaScript module named mathUtils.js that 
+exports two functions: add(a, b) and multiply(a, b). 
+
+Use ES Module syntax for exporting these functions.
+
+
+Exercise 2: Importing ES Modules
+
+Description: In a separate file named app.js, 
+import the add and multiply functions from mathUtils.js and 
+use them to calculate and log the sum and product of 5 and 3.
