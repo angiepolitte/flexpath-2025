@@ -17,7 +17,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_19();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -31,7 +31,7 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("Hello World!");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -49,7 +49,9 @@ function exercise_02() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let myAge = 47;
+  let myName = "Angie";
+  console.log(`${myName} ~ ${myAge}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +78,15 @@ function exercise_03() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let sum = num1 + num2;
+  let subtract = num1 - num2;
+  let multiply = num1 * num2;
+  let divide = num1 / num2;
+
+  console.log(sum);
+  console.log(subtract);
+  console.log(multiply);
+  console.log(divide);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +105,12 @@ function exercise_04() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let x = 7;
+  console.log(typeof x);
+  x = "Angie";
+  console.log(typeof x);
+  x = true;
+  console.log(typeof x);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -113,7 +128,10 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let isAvailable = true;
+  console.log(isAvailable);
+  isAvailable = !true;
+  console.log(isAvailable);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -138,7 +156,14 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let message = "Hi there, How are you?";
+  console.log(message);
+  let upper = message.toUpperCase();
+  console.log(upper);
+  let lower = message.toLocaleLowerCase();
+  console.log(lower);
+  let length = message.length;
+  console.log(length);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -165,7 +190,9 @@ function exercise_07() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name = "Angie";
+  let greeting = `"Hello, ${name}! Welcome to JS!`;
+  console.log(greeting);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -186,7 +213,10 @@ function exercise_08() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let name;
+  let anotherName = null;
+  console.log(name);
+  console.log(anotherName);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -206,7 +236,13 @@ function exercise_09() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "This is the book title",
+    author: "Some author name",
+    publishedDate: new Date("December 1, 1970"),
+  };
+  console.log(book);
+  console.log(book.title);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -226,7 +262,14 @@ function exercise_10() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "Grapes of Wrath",
+    author: "John Steinbeck",
+    publishedDate: new Date("December 1, 1939"),
+  };
+  console.log(book);
+  console.log(book.title);
+  console.log(book["author"]);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -248,7 +291,15 @@ function exercise_11() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "Grapes of Wrath",
+    author: "John Steinbeck",
+    publishedDate: new Date("December 1, 1939"),
+  };
+  book.publishedDate = new Date("January 5, 1980");
+  console.log(book);
+  book["publishedDate"] = new Date("March 24, 1999");
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -267,7 +318,15 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let book = {
+    title: "Grapes of Wrath",
+    author: "John Steinbeck",
+    publishedDate: new Date("December 1, 1939"),
+  };
+  console.log(book);
+
+  delete book.author;
+  console.log(book);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -298,7 +357,9 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(original.name);
+  copy.name = "Bob";
+  console.log(original.name);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -340,7 +401,8 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date(2025, 6, 1);
+  console.log(currentDate);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -353,7 +415,7 @@ function exercise_16() {
     Custom Dates
     
     1. Create a new variable `birthday` and assign it a new Date object that represents your birthday.
-        REMEBER - months are zero-indexed in the Date object
+        REMEMBER - months are zero-indexed in the Date object
 
         To generate a date for a 01/29/1994 birthday, the code would look like this:
         const birthday = new Date(1994, 0, 29)
@@ -365,7 +427,9 @@ function exercise_16() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let birthday = new Date(1977, 11, 2);
+  console.log(birthday);
+  console.log(birthday.toDateString());
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -392,7 +456,12 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  let currentDate = new Date(2025, 6, 1);
+  console.log(currentDate);
+
+  let timeDifference = currentDate - pastDate;
+  let differenceInDays = timeDifference / (1000 * 60 * 60 * 24);
+  console.log(Math.ceil(differenceInDays));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -423,7 +492,8 @@ function exercise_18() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log("With Plus Operator: " + msgPart1 + " " + msgPart2 + "!");
+  console.log(`With Template Literal: ${msgPart1} ${msgPart2}!`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -456,7 +526,9 @@ function exercise_19() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code here";
+  console.log(text.includes("JavaScript"));
+  console.log(text.includes("Python"));
+  console.log(text.includes("javascript"));
 
   // CODE IN THE OPEN LINES ABOVE
 }
