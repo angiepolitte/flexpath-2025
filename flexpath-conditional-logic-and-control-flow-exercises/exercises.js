@@ -20,7 +20,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_06();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -39,7 +39,10 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let ageMike = 55;
+  let ageAngie = 47;
+
+  console.log(ageAngie < ageMike);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -59,7 +62,10 @@ function exercise_02() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let num = 7;
+  let numString = "seven";
+
+  console.log(num === numString);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -85,7 +91,13 @@ function exercise_03() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let num = 6;
+
+  if (num % 2 === 0) {
+    console.log("Number is Even");
+  } else {
+    console.log("Number is Odd");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -110,7 +122,11 @@ function exercise_04() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let num = 9;
+  if (num >= 10 && num <= 20) {
+    console.log("Number is between 10 and 20");
+  }
+  console.log("Number is not between 10 and 20");
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -135,7 +151,13 @@ function exercise_05() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  let color = "blue";
+
+  if (color === "red" || color === "blue") {
+    console.log("Color is red or blue");
+  } else {
+    console.log("Color is not red or blue");
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -157,7 +179,22 @@ function exercise_06() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line of code and write your code here";
+  const isTruthy = (name, exp) => {
+    console.log(`${name}: ${Boolean(exp)}`);
+  };
+  isTruthy("val1", 0);
+  isTruthy("val2", 1);
+  isTruthy("val3", -1);
+  isTruthy("val4", NaN);
+  isTruthy("val5", null);
+  isTruthy("val6", undefined);
+  isTruthy("val7", false);
+  isTruthy("val8", "");
+  isTruthy("val9", "Hi!");
+  isTruthy("val10", "false");
+  isTruthy("val11", {});
+  let var1;
+  isTruthy("val12", var1);
 
   // CODE IN THE OPEN LINES ABOVE
 }

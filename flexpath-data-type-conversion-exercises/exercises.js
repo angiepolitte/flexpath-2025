@@ -449,7 +449,7 @@ function exercise_17() {
     Exercise 17
 
     1. Convert the Boolean value 'true' to a string.
-       Log it to he console
+       Log it to the console
     
   */
 
