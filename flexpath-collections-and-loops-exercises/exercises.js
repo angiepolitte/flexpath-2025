@@ -1,3 +1,4 @@
+import { copyFileSync } from "fs";
 import { fileURLToPath } from "url";
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
@@ -20,7 +21,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   */
 
   // Modify the line of code BELOW to run a different exercise
-  exercise_01();
+  exercise_16();
   // Modify the line of code ABOVE to run a different exercise
 }
 
@@ -39,8 +40,8 @@ function exercise_01() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
-
+  let arr1 = [1, 2, 3, 4, 5];
+  console.log(arr1);
   // CODE IN THE OPEN LINES ABOVE
 }
 
@@ -57,7 +58,8 @@ function exercise_02() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [1, 2, 3, 4, 5];
+  console.log(`Numbers in the array are: ${arr1[0]}, ${arr1[4]}`);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -76,7 +78,17 @@ function exercise_03() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr2 = new Array();
+  arr2.push(1);
+  console.log(arr2);
+  arr2.push(2);
+  console.log(arr2);
+  arr2.push(3);
+  console.log(arr2);
+  arr2.push(4);
+  console.log(arr2);
+  arr2.push(5);
+  console.log(arr2);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -95,7 +107,16 @@ function exercise_04() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr3 = ["Angie", "Mike", "Aiden", "Jake", "Natalie", "Emily"];
+  console.log(arr3);
+  arr3.unshift("Emily");
+  console.log(arr3);
+  arr3.shift();
+  console.log(arr3);
+  arr3.shift();
+  console.log(arr3);
+  arr3.shift();
+  console.log(arr3);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -115,7 +136,10 @@ function exercise_05() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr3 = ["Angie", "Mike", "Aiden", "Jake", "Natalie", "Emily"];
+  console.log(arr3);
+  arr3.pop();
+  console.log(arr3);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -134,7 +158,16 @@ function exercise_06() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr3 = ["Angie", "Mike", "Aiden", "Jake", "Natalie", "Emily"];
+  console.log(arr3);
+  arr3.unshift("Emily");
+  console.log(arr3);
+  arr3.shift();
+  console.log(arr3);
+  arr3.shift();
+  console.log(arr3);
+  arr3.shift();
+  console.log(arr3);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -152,7 +185,10 @@ function exercise_07() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  console.log(arr1);
+
+  console.log(arr1.includes(7));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -177,7 +213,10 @@ function exercise_08() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  console.log(arr1);
+
+  console.log(arr1.indexOf(4));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -196,7 +235,10 @@ function exercise_09() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  console.log(arr1);
+  arr1.splice(4, 2); //at index, then how many to remove
+  console.log(arr1);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -224,7 +266,12 @@ function exercise_10() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let map1 = new Map();
+  map1.set("firstName", "Angie");
+  map1.set("LastName", "Politte");
+  map1.set("age", 47);
+  console.log(map1);
+  console.log(map1.size);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -256,7 +303,12 @@ function exercise_11() {
    - The second element, the value of that key
   */
 
-  const placeholder = "Delete this line and code in this space";
+  let map1 = new Map();
+  map1.set("firstName", "Angie");
+  map1.set("lastName", "Politte");
+  map1.set("age", 47);
+  console.log(map1);
+  console.log(map1.get("lastName"));
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -278,7 +330,14 @@ function exercise_12() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let map1 = new Map();
+  map1.set("firstName", "Angie");
+  map1.set("lastName", "Politte");
+  map1.set("age", 47);
+  console.log(map1);
+  console.log(map1.size);
+  console.log(map1.delete("lastName"));
+  console.log(map1.size);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -313,7 +372,18 @@ function exercise_13() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let set1 = new Set();
+  set1.add("Angie");
+  set1.add("Politte");
+  set1.add(47);
+  console.log(set1.size);
+  set1.add("Politte");
+  console.log(set1);
+  console.log(set1.size);
+  console.log(set1.has("Angie"));
+  set1.delete(47);
+  console.log(set1);
+  console.log(set1.size);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -330,7 +400,11 @@ function exercise_14() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let x = 1;
+  while (x <= 5) {
+    console.log(x);
+    x++;
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -343,6 +417,7 @@ function exercise_15() {
     Do-While Loop: 
 		
 		Use a do-while loop and the decrement operator to log numbers from 28 to 1.
+    
 
     Then add a conditional inside the loop to only print the number if it is 
     divisible by 7 OR 4
@@ -350,7 +425,11 @@ function exercise_15() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let x = 28;
+  do {
+    console.log(x);
+    --x;
+  } while (x > 0);
 
   // CODE IN THE OPEN LINES ABOVE
 }
@@ -496,7 +575,7 @@ function exercise_17() {
   */
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  let itemNames = new Array();
 
   // CODE IN THE OPEN LINES ABOVE
 }
