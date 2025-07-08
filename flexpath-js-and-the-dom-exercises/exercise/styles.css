@@ -4,7 +4,12 @@ body {
   padding: 0;
 }
 
-header, nav, main, section, article, footer {
+header,
+nav,
+main,
+section,
+article,
+footer {
   padding: 20px;
 }
 
@@ -19,8 +24,8 @@ nav ul {
 }
 
 img {
-  max-width:450px;
-  max-height:450px;
+  max-width: 450px;
+  max-height: 450px;
 }
 
 nav ul li a {
@@ -31,6 +36,9 @@ nav ul li a {
 #interactive {
   background-color: #e2e2e2;
   padding: 20px;
+}
+#color-button {
+  background-color: white;
 }
 
 #item-list {
