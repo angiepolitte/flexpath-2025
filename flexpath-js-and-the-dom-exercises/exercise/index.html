@@ -43,9 +43,7 @@
       <section id="interactive">
         <h2>Interactive Elements</h2>
         <button id="alert-button">Click Me</button>
-        <button id="color-button" style="background-color: white">
-          Change Color
-        </button>
+        <button id="color-button">Change Color</button>
         <ul id="item-list">
           <li id="item1" class="list-item">Item 1</li>
           <li id="item2" class="list-item">Item 2</li>
@@ -61,7 +59,37 @@
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 My Webpage</p>
+      <p>&copy; <span id="copyright-year"></span> My Webpage</p>
     </footer>
+    <script>
+      let placeHolder = document.querySelector("footer p");
+
+      placeHolder.childNodes[1].textContent = new Date().getFullYear();
+      placeHolder.lastChild.remove();
+
+      let blank = document.createTextNode(" ");
+      placeHolder.appendChild(blank);
+
+      let a = document.createElement("a");
+      a.setAttribute("href", "./index.html");
+
+      let a_text = document.createTextNode("Angie");
+
+      a.appendChild(a_text);
+      placeHolder.appendChild(a);
+    </script>
   </body>
 </html>
+
+<!-- 
+    <script>
+      document.getElementById("copyright-year").innerHTML =
+        new Date().getFullYear();
+    </script> -->
+
+<!-- <script>
+      document.querySelector("footer p").childNodes[1].textContent =
+        new Date().getFullYear();
+      document.querySelector("footer p").lastChild.remove();
+      
+    </script> -->
