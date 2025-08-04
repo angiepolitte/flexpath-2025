@@ -17,13 +17,20 @@ const section3OutputDiv = document.getElementById("section-3-output");
 
 	Display the response data in the div with ID 'section-1-output'
 */
+const buttonOne = document.getElementById("exercise-1-btn");
+
+buttonOne.addEventListener("click", () => {
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json())
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error fetching data: ", error);
+    });
+});
 
 // Exercise 1
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
 
 /*
 	Exercise 2: Handling Text Responses
@@ -40,13 +47,20 @@ placeholder = `Delete this
 	
 	
 */
+const buttonTwo = document.getElementById("exercise-2-btn");
+
+buttonTwo.addEventListener("click", () => {
+  fetch("https://jsonplaceholder.typicode.com/posts/5")
+    .then((response) => response.text())
+    .then((text) => {
+      section1OutputDiv.textContent = text;
+    })
+    .catch((error) => {
+      console.error("Error fetching text: ", error);
+    });
+});
 
 // Exercise 2
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
 
 /*
 Exercise 3: Making a POST Request with Fetch
@@ -60,12 +74,31 @@ with JSON data when the 'exercise-3-btn' is clicked.
 Display the response of this POST call in the #section-1-output div.
 */
 
+const buttonThree = document.getElementById("exercise-3-btn");
+
+buttonThree.addEventListener("click", () => {
+  const data = {
+    title: "Angie",
+    body: "Politte",
+    userId: 1,
+  };
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.log("Error fetching post: ", error);
+    });
+});
+
 // Exercise 3
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
 
 /*
 Exercise 4: Understanding HTTP Status Codes
@@ -83,13 +116,29 @@ Handle the cases for status codes 200 (OK) and
 
 Display the response in the #section-1-output div.
 */
+const buttonFour = document.getElementById("exercise-4-btn");
+
+buttonFour.addEventListener("click", () => {
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => {
+      console.log("Response:", response.status);
+      if (response.status === 200) {
+        return response.json();
+      } else if (response.status === 404) {
+        throw new Error("Not Found", error);
+      } else {
+        throw new Error("Error:", error);
+      }
+    })
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
+});
 
 // Exercise 4
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
 
 /*
 Exercise 5: Setting Custom HTTP Headers
@@ -108,11 +157,31 @@ Display the response in the #section-1-output div.
 
 // Exercise 5
 
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
+const buttonFive = document.getElementById("exercise-5-btn");
+
+buttonFive.addEventListener("click", () => {
+  const data = {
+    title: "foo",
+    body: "bar",
+    userId: 1,
+  };
+
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Custom-Header": "MyHeaderValue",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
+});
 
 /*
 Exercise 6: Content Negotiation with Accept Header
@@ -132,11 +201,25 @@ Display the response data in the div with ID 'section-1-output'
 */
 
 // Exercise 6
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
+const buttonSix = document.getElementById("exercise-6-btn");
+
+buttonSix.addEventListener("click", () => {
+  fetch("https://jsonplaceholder.typicode.com/posts/1", {
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      console.log("Response Headers: ", response.headers);
+      return response.json();
+    })
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error fetching data: ", error);
+    });
+});
 
 /*
 Exercise 7: 
@@ -161,11 +244,19 @@ Display the result in the #section-1-output div.
 */
 
 // Exercise 7
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
+const buttonSeven = document.getElementById("exercise-7-btn");
+
+buttonSeven.addEventListener("click", async () => {
+  try {
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/posts/5"
+    );
+    const text = await response.text();
+    section1OutputDiv.textContent = text;
+  } catch (error) {
+    console.error("Error fetching text", error);
+  }
+});
 
 /*
 Exercise 8: Handling Network Errors
@@ -182,11 +273,19 @@ Have the request fire when the 'exercise-8-btn' btn is clicked.
 // Exercise 8 - Use the invalidUrl below
 const invalidUrl = "https://invalid-url";
 
-placeholder = `Delete this 
-									block 
-									and 
-									code 
-									here`;
+const buttonEight = document.getElementById("exercise-8-btn");
+
+buttonEight.addEventListener("click", () => {
+  fetch(invalidUrl)
+    .then((response) => response.json)
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      section1OutputDiv.textContent = "Error Occurred";
+      console.error("Error", error);
+    });
+});
 
 /*
 Exercise 9: Aborting a Fetch Request

@@ -31,6 +31,19 @@ exercise1btn.addEventListener("click", () => {
     });
 });
 
+const buttonOne = document.getElementById("exercise-1-btn");
+
+buttonOne.addEventListener("click", function () {
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => response.json())
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error fetching JSON: ", error);
+    });
+});
+
 /*
 	Exercise 2: Handling Text Responses
 
@@ -57,6 +70,18 @@ exercise2btn.addEventListener("click", () => {
     })
     .catch((error) => {
       console.error("Error fetching text:", error);
+    });
+});
+
+const buttonTwo = document.getElementById("exercise-2-btn");
+buttonTwo.addEventListener("click", function () {
+  fetch("https://jsonplaceholder.typicode.com/posts/5")
+    .then((response) => response.text())
+    .then((text) => {
+      section1OutputDiv.textContent = text;
+    })
+    .catch((error) => {
+      console.error("Error Fetching text: ", error);
     });
 });
 
@@ -97,6 +122,29 @@ exercise3btn.addEventListener("click", () => {
     });
 });
 
+const buttonThree = document.getElementById("exercise-3-btn");
+buttonThree.addEventListener("click", function () {
+  const data = {
+    title: "foo",
+    body: "bar",
+    userId: 1,
+  };
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error posting data: ", error);
+    });
+});
+
 /*
 Exercise 4: Understanding HTTP Status Codes
 
@@ -134,6 +182,28 @@ exercise4btn.addEventListener("click", () => {
     .catch((error) => {
       section1OutputDiv.textContent = error.message;
       console.error("Error fetching JSON:", error);
+    });
+});
+
+const buttonFour = document.getElementById("exercise-4-btn");
+
+buttonFour.addEventListener("click", () => {
+  fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((response) => {
+      console.log("Status Code:", response.status);
+      if (response.status === 200) {
+        return response.json();
+      } else if (response.status === 404) {
+        throw new Error("Not Found", error);
+      } else {
+        throw new Error("Error", error);
+      }
+    })
+    .then((data) => {
+      section1OutputDiv.textContent = JSON.stringify(data, null, 2);
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
     });
 });
 

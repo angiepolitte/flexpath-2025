@@ -4,7 +4,11 @@ body {
   padding: 0;
 }
 
-header, nav, main, section, footer {
+header,
+nav,
+main,
+section,
+footer {
   padding: 20px;
 }
 
@@ -29,7 +33,9 @@ button {
   cursor: pointer;
 }
 
-#section-1-output, #section-2-outputt, #section-3-output {
+#section-1-output,
+#section-2-outputt,
+#section-3-output {
   margin-top: 20px;
   padding: 10px;
   background-color: #e2e2e2;
